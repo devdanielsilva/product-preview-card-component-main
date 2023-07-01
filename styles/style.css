@@ -18,3 +18,29 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/**/
+.container{
+    background-color: #fff;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/**/
+.img img{
+    max-width: 100%;
+    display: inherit;
+}
+
+/**/
+.card-content{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/**/
