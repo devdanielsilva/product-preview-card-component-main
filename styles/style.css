@@ -75,4 +75,27 @@ p.pro-des{
     line-height: 1.6em;
 }
 
+/*Seletor */
+.price{
+    display: flex;
+    align-items: center;
+}
+
 /**/
+p.current-price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+/**/
+p.old-price{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+/**/
+button.cta{
+    background-color: hsl(158, 36%, 37%);
+}
