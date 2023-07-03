@@ -23,7 +23,7 @@ body {
 }
 
 /**/
-.container{
+.container {
     background-color: #fff;
     /**/
     max-width: 700px;
@@ -38,14 +38,14 @@ body {
 }
 
 /**/
-.img img{
+.img img {
     max-width: 100%;
     /**/
     display: inherit;
 }
 
 /**/
-.card-content{
+.card-content {
     padding: 35px;
     display: flex;
     /**/
@@ -54,7 +54,7 @@ body {
 }
 
 /**/
-h6.pro-cat{
+h6.pro-cat {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 13px;
@@ -62,7 +62,7 @@ h6.pro-cat{
 }
 
 /**/
-h2.pro-name{
+h2.pro-name {
     font-family: 'Fraunces', serif;
     font-size: 34px;
     line-height: 1em;
@@ -70,19 +70,19 @@ h2.pro-name{
 }
 
 /**/
-p.pro-des{
+p.pro-des {
     color: hsl(212, 21%, 14%);
     line-height: 1.6em;
 }
 
 /*Seletor */
-.price{
+.price {
     display: flex;
     align-items: center;
 }
 
 /**/
-p.current-price{
+p.current-price {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-size: 25px;
@@ -90,12 +90,24 @@ p.current-price{
 }
 
 /**/
-p.old-price{
+p.old-price {
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
 }
 
 /**/
-button.cta{
+button.cta {
     background-color: hsl(158, 36%, 37%);
 }
+
+/**/
+button.cta:hover {}
+
+/**/
+button.cta img {}
+
+/**/
+@media screen and (max-width:628px) {}
+
+/**/
+@media screen and (max-width: 375px) {}
