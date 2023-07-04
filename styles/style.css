@@ -47,6 +47,7 @@ body {
 
     /**/
     overflow: hidden;
+    
 }
 
 /**/
@@ -136,6 +137,9 @@ button.cta {
 
     /**/
     width: 100%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 /**/
