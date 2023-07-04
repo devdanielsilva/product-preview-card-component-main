@@ -10,9 +10,15 @@ família da fonte: 'Montserrat', sem serifa;*/
 }
 
 body {
+    /**/
     font-family: 'Montserrat', sans-serif;
+
+    /**/
     background-color: hsl(30, 38%, 92%);
+
+    /**/
     font-size: 14px;
+
     /**/
     min-height: 100vh;
     display: flex;
@@ -24,39 +30,56 @@ body {
 
 /**/
 .container {
+    /**/
     background-color: #fff;
+
     /**/
     max-width: 700px;
+
     /**/
     display: grid;
+
     /**/
     grid-template-columns: 1fr 1fr;
+
     /**/
     border-radius: 15px;
+
     /**/
     overflow: hidden;
 }
 
 /**/
 .img img {
+    /**/
     max-width: 100%;
+
     /**/
     display: inherit;
 }
 
 /**/
 .card-content {
+    /**/
     padding: 35px;
     display: flex;
+
     /**/
     flex-direction: column;
+
+    /**/
     justify-content: space-between;
 }
 
 /**/
 h6.pro-cat {
+    /**/
     text-transform: uppercase;
+
+    /**/
     letter-spacing: 3px;
+
+    /**/
     font-size: 13px;
     color: hsl(228, 12%, 48%);
 }
@@ -98,16 +121,110 @@ p.old-price {
 /**/
 button.cta {
     background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 1px 0;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700px;
+
+    /*Cursor: pointer; serve para quando passar o cursor do mouse em cima de algo especifíco, aconteça algo. No caso desse seletor, vai mudar de cor, é uma cor meio escura/meio claro.*/
+    cursor: pointer;
+
+    /**/
+    transition: background-color .3 ease;
+
+    /**/
+    width: 100%;
 }
 
 /**/
-button.cta:hover {}
+button.cta:hover {
+    /*background-color: hsl(158, 36%, 37%); é a cor em hsl do botão de adicionar cartão.*/
+    background-color: hsl(158, 36%, 37%);
+}
 
 /**/
-button.cta img {}
+button.cta img {
+    /*padding-right: 7px; é a direção da imagem do botão de adicionar cartão, 7px para a direita.*/
+    padding-right: 7px;
+}
 
 /**/
-@media screen and (max-width:628px) {}
+@media screen and (max-width:628px) {
+
+    /**/
+    .grid {
+        /**/
+        grid-template-columns: 1fr;
+    }
+
+    /**/
+    .img img {
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /**/
+    .card-content {
+        display: flex;
+    }
+
+    /**/
+    h6.pro-cat,
+    h2.pro-name,
+    p.pro-des,
+    .price {
+        padding-bottom: 23px;
+    }
+}
 
 /**/
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+
+    /**/
+    .container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    /**/
+    .img img {
+        max-height: 290px;
+    }
+
+    /**/
+    .card-content {
+        padding: 24px;
+    }
+
+    /**/
+    h6.pro-cat,
+    h2.pro-name,
+    p.pro-des,
+    .price {
+        padding-bottom: 16px;
+    }
+
+    /**/
+    h2.pro-name {
+        font-size: 28px;
+    }
+
+    /**/
+    p.pro-des {
+        font-size: 12px;
+    }
+
+    /**/
+    p.current-price {
+        font-size: 23px;
+    }
+
+    /**/
+    button.cta {
+        padding: 12px 0;
+        font-size: 13px;
+    }
+}
