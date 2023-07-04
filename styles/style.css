@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Fraunces:opsz,wght@9..144,700 & family= Montserrat:wght@500;700 & display=swap');
 
 /*font-family: 'Fraunces', serif;
-família da fonte: 'Montserrat', sem serifa;*/
+família da fonte: 'Montserrat', sans-serif;*/
 
 * {
     margin: 0%;
@@ -30,33 +30,27 @@ body {
 
 /**/
 .container {
-    /**/
-    background-color: #fff;
+    margin: 30px auto;
+    padding: 0 30px;
+}
 
-    /**/
+/**/
+.grid {
     max-width: 700px;
-
-    /**/
     display: grid;
-
-    /**/
     grid-template-columns: 1fr 1fr;
-
-    /**/
+    background-color: #fff;
     border-radius: 15px;
-
-    /**/
     overflow: hidden;
-    
 }
 
 /**/
 .img img {
     /**/
-    max-width: 100%;
+    display: inherit;
 
     /**/
-    display: inherit;
+    max-width: 100%;
 }
 
 /**/
@@ -72,37 +66,47 @@ body {
     justify-content: space-between;
 }
 
-/**/
+/*Título de nível 6. Título PERFUME.*/
 h6.pro-cat {
+    color: hsl(228, 12%, 48%);
+
+    /**/
+    font-size: 13px;
+
+    /**/
+    font-weight: 500px;
+
     /**/
     text-transform: uppercase;
 
     /**/
     letter-spacing: 3px;
 
-    /**/
-    font-size: 13px;
-    color: hsl(228, 12%, 48%);
+    padding: 32px;
 }
 
-/**/
+/*Título de nível 2. Título Gabrielle Essence. Logo abaixo do título h6.*/
 h2.pro-name {
     font-family: 'Fraunces', serif;
     font-size: 34px;
     line-height: 1em;
     color: hsl(212, 21%, 14%);
+    padding: 32px 32px;
 }
 
 /**/
 p.pro-des {
     color: hsl(212, 21%, 14%);
     line-height: 1.6em;
+    padding: 32px 32px;
+    font-size: 16px;
 }
 
 /*Seletor */
 .price {
     display: flex;
     align-items: center;
+    padding: 20px 32px;
 }
 
 /**/
@@ -110,12 +114,15 @@ p.current-price {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-size: 25px;
+    padding: 32px;
     padding-right: 25px;
 }
 
 /**/
 p.old-price {
     color: hsl(228, 12%, 48%);
+
+    /*text-decoration: line-through; serve para deixar o texto com uma linha horinzontal em cima. Exemplo: Preço antigo de um produto que está com desconto.*/
     text-decoration: line-through;
 }
 
@@ -123,10 +130,11 @@ p.old-price {
 button.cta {
     background-color: hsl(158, 36%, 37%);
     border: none;
-    padding: 1px 0;
+    padding: 14px 0;
+    margin: 0 90px;
     border-radius: 12px;
     color: white;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700px;
 
     /*Cursor: pointer; serve para quando passar o cursor do mouse em cima de algo especifíco, aconteça algo. No caso desse seletor, vai mudar de cor, é uma cor meio escura/meio claro.*/
@@ -136,9 +144,11 @@ button.cta {
     transition: background-color .3 ease;
 
     /**/
-    width: 100%;
+    width: 70%;
 
+    text-align: center;
     justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 
@@ -172,7 +182,7 @@ button.cta img {
 
     /**/
     .card-content {
-        display: flex;
+        display: block;
     }
 
     /**/
