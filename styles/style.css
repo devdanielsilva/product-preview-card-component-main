@@ -131,6 +131,7 @@ button.cta {
     background-color: hsl(158, 36%, 37%);
     border: none;
     padding: 14px 0;
+    margin: 0px 20px 15px 37px;
     border-radius: 12px;
     color: white;
     font-size: 17px;
